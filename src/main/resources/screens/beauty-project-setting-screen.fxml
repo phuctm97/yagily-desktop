@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<StackPane minHeight="720.0" minWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+            <children>
+                <VBox layoutY="80.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                            <children>
+                                <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="34.0" styleClass="blue-icon" stylesheets="@../styles/beauty.css">
+                                    <children>
+                                        <ImageView cache="true" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/star.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </VBox>
+                                <VBox>
+                                    <children>
+                                        <Label fx:id="_titleText" styleClass="screen-title" stylesheets="@../styles/beauty.css" text="Project settings" />
+                                        <Label fx:id="_subtitleText" styleClass="screen-subtitle" stylesheets="@../styles/beauty.css" text="\@Facebook" />
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </VBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <padding>
+                                <Insets bottom="28.0" left="28.0" top="28.0" />
+                            </padding>
+                        </HBox>
+                  <VBox styleClass="backlog-board" stylesheets="@../styles/beauty.css">
+                     <children>
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="ALWAYS" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="12.0" vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="12.0" vgrow="SOMETIMES" />
+                              <RowConstraints valignment="TOP" vgrow="NEVER" />
+                           </rowConstraints>
+                           <children>
+                              <Label styleClass="form-label" stylesheets="@../styles/screen.css" text="Key" />
+                              <Label styleClass="form-label" stylesheets="@../styles/screen.css" text="Name" GridPane.rowIndex="2" />
+                              <TextField fx:id="_keyText" maxWidth="-Infinity" minWidth="-Infinity" promptText="KEY" styleClass="form-text-field" stylesheets="@../styles/screen.css" GridPane.columnIndex="1" />
+                              <TextField fx:id="_nameText" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="360.0" promptText="Your project name" styleClass="form-text-field" stylesheets="@../styles/screen.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label styleClass="form-label" stylesheets="@../styles/screen.css" text="Logo" GridPane.rowIndex="4">
+                                 <GridPane.margin>
+                                    <Insets top="12.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <HBox GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <children>
+                                    <StackPane onMouseEntered="#onBeginHoverImage" onMouseExited="#onEndHoverImage">
+                                       <children>
+                                          <Circle fill="WHITE" radius="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                                             <effect>
+                                                <DropShadow color="#00000033" />
+                                             </effect>
+                                          </Circle>
+                                          <ImageView fx:id="_logoImage" fitHeight="62.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Button fx:id="_otherImageButton" mnemonicParsing="false" onAction="#onPressOtherImage" styleClass="browse-image-button" stylesheets="@../styles/screen.css" text="Ảnh khác">
+                                             <StackPane.margin>
+                                                <Insets top="48.0" />
+                                             </StackPane.margin>
+                                          </Button>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </GridPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="28.0" right="28.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <HBox alignment="CENTER_RIGHT">
+                     <children>
+                        <Button fx:id="_updateButton" mnemonicParsing="false" onAction="#onPressUpdate" styleClass="ok-button" stylesheets="@../styles/screen.css" text="Update" />
+                        <Button fx:id="_deleteButton" mnemonicParsing="false" onAction="#onPressDelete" styleClass="delete-button" stylesheets="@../styles/screen.css" text="Delete">
+                           <HBox.margin>
+                              <Insets left="18.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="28.0" right="28.0" top="16.0" />
+                     </VBox.margin>
+                  </HBox>
+                    </children>
+                </VBox>
+            </children>
+            <padding>
+                <Insets bottom="28.0" left="12.0" top="52.0" />
+            </padding>
+        </AnchorPane>
+    </children>
+</StackPane>

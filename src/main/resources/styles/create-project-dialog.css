@@ -1,0 +1,201 @@
+.backdrop {
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+}
+
+.title {
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-weight: bold;
+    -fx-font-size: 28;
+    -fx-text-fill: black;
+}
+
+.form-label {
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-weight: normal;
+    -fx-font-size: 20;
+    -fx-text-fill: black;
+}
+
+.form-text-field {
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-weight: normal;
+    -fx-font-size: 20;
+    -fx-text-fill: black;
+    -fx-padding: 15;
+    -fx-background-color: white;
+    -fx-border-style: solid inside;
+    -fx-border-width: 1;
+    -fx-border-color: #bfc3c7;
+    -fx-border-radius: 3;
+    -fx-prompt-text-fill: #bfc3c7;
+}
+
+.form-text-area {
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-weight: normal;
+    -fx-font-size: 20;
+    -fx-text-fill: black;
+    -fx-background-color: white;
+    -fx-border-style: solid inside;
+    -fx-border-width: 1;
+    -fx-border-color: #bfc3c7;
+    -fx-border-radius: 3;
+    -fx-prompt-text-fill: #bfc3c7;
+}
+
+.form-text-area .scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-style: none;
+    -fx-border-width: 0;
+}
+
+.form-text-area .scroll-pane .viewport {
+    -fx-background-color: transparent;
+    -fx-border-style: none;
+    -fx-border-width: 0;
+}
+
+.form-text-area .scroll-pane .content {
+    -fx-background-color: transparent;
+    -fx-border-style: none;
+    -fx-border-width: 0;
+    -fx-padding: 15;
+}
+
+.form-text-area .scroll-pane .scroll-bar {
+    -fx-background-color: transparent;
+    -fx-font-size: 8;
+    -fx-padding: 0 3 0 0;
+}
+
+.form-text-area .scroll-pane .scroll-bar .increment-button,
+.form-text-area .scroll-pane .scroll-bar .decrement-button,
+.form-text-area .scroll-pane .scroll-bar .increment-button .increment-arrow,
+.form-text-area .scroll-pane .scroll-bar .decrement-button .decrement-arrow,
+.form-text-area .scroll-pane .scroll-bar .track {
+    visibility: collapse;
+}
+
+.form-text-area .scroll-pane .scroll-bar .thumb {
+    -fx-background-color: #bfc3c7;
+}
+
+.form-date-picker {
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-weight: normal;
+    -fx-font-size: 20;
+    -fx-text-fill: black;
+    -fx-background-color: transparent;
+    -fx-border-style: solid inside;
+    -fx-border-width: 1;
+    -fx-border-color: #bfc3c7;
+    -fx-border-radius: 3;
+}
+
+.form-date-picker .text-field {
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-weight: normal;
+    -fx-font-size: 20;
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: #bfc3c7;
+    -fx-padding: 15;
+    -fx-background-color: transparent;
+}
+
+.form-date-picker .arrow-button {
+    -fx-background-color: #bfc3c730;
+    -fx-border-style: none;
+    -fx-border-width: 0;
+}
+
+.form-date-picker .arrow-button .arrow {
+    -fx-background-color: #afb3b7;
+}
+
+.form-combo-box {
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-weight: normal;
+    -fx-font-size: 20;
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: #bfc3c7;
+    -fx-background-color: transparent;
+    -fx-border-style: solid inside;
+    -fx-border-width: 1;
+    -fx-border-color: #bfc3c7;
+    -fx-border-radius: 3;
+}
+
+.form-combo-box .list-cell {
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-weight: normal;
+    -fx-font-size: 20;
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: #bfc3c7;
+    -fx-padding: 15;
+    -fx-background-color: transparent;
+}
+
+.form-combo-box .list-cell:hover {
+    -fx-background-color: #bfc3c740;
+}
+
+.form-combo-box .arrow-button {
+    -fx-background-color: #bfc3c730;
+    -fx-border-style: none;
+    -fx-border-width: 0;
+}
+
+.form-combo-box .arrow-button .arrow {
+    -fx-background-color: #afb3b7;
+}
+
+.browse-image-button {
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-size: 12;
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-background-radius: 100;
+    -fx-text-fill: white;
+    -fx-padding: 2 8;
+    -fx-cursor: hand;
+}
+
+.browse-image-button:hover {
+    -fx-underline: true;
+}
+
+.ok-button {
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-size: 20;
+    -fx-background-color: #4680ff;
+    -fx-background-radius: 3;
+    -fx-padding: 10 30;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(two-pass-box, rgba(70, 128, 255, 0.4), 10, 0.05, 0, 1);
+}
+
+.ok-button:hover {
+    -fx-background-color: #4680ffd0;
+}
+
+.ok-button:pressed {
+    -fx-background-color: #4680ffa0;
+}
+
+.delete-button {
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-size: 20;
+    -fx-font-weight: normal;
+    -fx-text-fill: #fb617f;
+    -fx-background-color: #fb617f20;
+    -fx-effect: dropshadow(two-pass-box, #fb617f66, 10, 0.05, 0, 1);
+    -fx-padding: 10 30;
+}
+
+.delete-button:hover {
+    -fx-background-color: #fb617f30;
+}
+
+.delete-button:pressed {
+    -fx-background-color: #fb617f40;
+}

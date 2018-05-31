@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="backdrop" stylesheets="@../styles/create-project-dialog.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox alignment="TOP_RIGHT">
+            <children>
+                <ImageView fitHeight="20.0" fitWidth="20.0" onMouseClicked="#onClickClose" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/cancel-gray.png" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER">
+            <children>
+                <Label fx:id="_titleLabel" text="Start sprint" />
+            <Label fx:id="_codeText" styleClass="title" stylesheets="@../styles/create-project-dialog.css" text="#9">
+               <HBox.margin>
+                  <Insets left="8.0" />
+               </HBox.margin>
+            </Label>
+            </children>
+        </HBox>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="110.0" />
+                <ColumnConstraints hgrow="ALWAYS" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" valignment="TOP" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label styleClass="form-label" stylesheets="@../styles/create-project-dialog.css" text="Start date" />
+                <Label styleClass="form-label" stylesheets="@../styles/create-project-dialog.css" text="End date" GridPane.rowIndex="4">
+                    <GridPane.margin>
+                        <Insets top="12.0" />
+                    </GridPane.margin></Label>
+                <TextField fx:id="_startDateText" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="254.0" promptText="Today" styleClass="form-text-field" stylesheets="@../styles/create-project-dialog.css" GridPane.columnIndex="1" />
+            <DatePicker fx:id="_endDatePicker" prefHeight="59.0" prefWidth="254.0" promptText="Sprint deadline" styleClass="form-date-picker" stylesheets="@../styles/create-project-dialog.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label styleClass="form-label" stylesheets="@../styles/create-project-dialog.css" text="Duration" GridPane.rowIndex="2" />
+            <ComboBox fx:id="_durationSelect" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#onSelectDuration" prefWidth="254.0" styleClass="form-combo-box" stylesheets="@../styles/create-project-dialog.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label styleClass="form-label" stylesheets="@../styles/create-project-dialog.css" text="Description" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets top="12.0" />
+               </GridPane.margin>
+            </Label>
+            <TextArea fx:id="_descriptionText" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="454.0" promptText="Detail description about what to do in this sprint" styleClass="form-text-area" stylesheets="@../styles/create-project-dialog.css" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            </children>
+            <VBox.margin>
+                <Insets top="28.0" />
+            </VBox.margin>
+        </GridPane>
+        <HBox alignment="CENTER">
+            <children>
+                <Button fx:id="_startButton" mnemonicParsing="false" onAction="#onPressStart" styleClass="ok-button" stylesheets="@../styles/create-project-dialog.css" text="Start" />
+            </children>
+            <VBox.margin>
+                <Insets top="28.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="28.0" left="28.0" right="28.0" top="28.0" />
+    </padding>
+</VBox>

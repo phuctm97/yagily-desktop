@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="TOP_CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="300.0"
+      xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="io.yfam.yagily.gui.screens.TeamMemberChoiceScreen">
+    <children>
+        <ListView fx:id="_listView" maxWidth="1.7976931348623157E308" prefHeight="200.0"/>
+        <Button mnemonicParsing="false" onAction="#onPressSelect" styleClass="simple-tiny-button"
+                stylesheets="@../styles/simple.css" text="Select">
+            <VBox.margin>
+                <Insets top="8.0"/>
+            </VBox.margin>
+        </Button>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+</VBox>

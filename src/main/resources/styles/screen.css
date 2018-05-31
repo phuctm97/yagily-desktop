@@ -1,0 +1,70 @@
+.form-label {
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-weight: normal;
+    -fx-font-size: 18;
+    -fx-text-fill: black;
+}
+
+.form-text-field {
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-weight: normal;
+    -fx-font-size: 16;
+    -fx-text-fill: black;
+    -fx-padding: 12;
+    -fx-background-color: white;
+    -fx-border-style: solid inside;
+    -fx-border-width: 1;
+    -fx-border-color: #bfc3c7;
+    -fx-border-radius: 3;
+    -fx-prompt-text-fill: #bfc3c7;
+}
+
+.browse-image-button {
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-size: 11;
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-background-radius: 100;
+    -fx-text-fill: white;
+    -fx-padding: 2 8;
+    -fx-cursor: hand;
+}
+
+.browse-image-button:hover {
+    -fx-underline: true;
+}
+
+.ok-button {
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-size: 16;
+    -fx-background-color: #4680ff;
+    -fx-background-radius: 3;
+    -fx-padding: 10 30;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(two-pass-box, rgba(70, 128, 255, 0.4), 10, 0.05, 0, 1);
+}
+
+.ok-button:hover {
+    -fx-background-color: #4680ffd0;
+}
+
+.ok-button:pressed {
+    -fx-background-color: #4680ffa0;
+}
+
+.delete-button {
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-size: 16;
+    -fx-font-weight: normal;
+    -fx-text-fill: #fb617f;
+    -fx-background-color: #fb617f20;
+    -fx-effect: dropshadow(two-pass-box, #fb617f66, 10, 0.05, 0, 1);
+    -fx-padding: 10 30;
+}
+
+.delete-button:hover {
+    -fx-background-color: #fb617f30;
+}
+
+.delete-button:pressed {
+    -fx-background-color: #fb617f40;
+}

@@ -1,0 +1,47 @@
+.simple-text-field {
+    -fx-font-size: 20;
+}
+
+.simple-text {
+    -fx-font-size: 20;
+}
+
+.simple-text-bold {
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+
+.simple-small-button {
+    -fx-font-size: 20;
+}
+
+.simple-tiny-button {
+    -fx-font-size: 16;
+}
+
+.simple-title {
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+}
+
+.simple-subtitle {
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+
+}
+
+.project-list-item {
+}
+
+.project-list-item:pressed {
+    -fx-background-color: cyan;
+}
+
+.sprint-board > .viewport {
+    -fx-background-color: white;
+    -fx-border-radius: 5;
+}
+
+.tiny-text {
+    -fx-font-size: 14;
+}

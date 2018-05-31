@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="CONSOLE_OUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %p: [%t][%c] %l%n%m%n"/>
+            <Filters>
+                <ThresholdFilter level="WARN" onMatch="DENY" onMismatch="NEUTRAL"/>
+                <ThresholdFilter level="ERROR" onMatch="DENY" onMismatch="NEUTRAL"/>
+                <ThresholdFilter level="FATAL" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+        </Console>
+        <Console name="CONSOLE_ERR" target="SYSTEM_ERR">
+            <PatternLayout pattern="%d %p: [%t][%c] %l%n%m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="ALL">
+            <AppenderRef ref="CONSOLE_OUT" level="INFO"/>
+            <AppenderRef ref="CONSOLE_ERR" level="WARN"/>
+        </Root>
+    </Loggers>
+</Configuration>

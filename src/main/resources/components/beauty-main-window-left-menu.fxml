@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<VBox minWidth="250.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+   </padding>
+   <children>
+      <VBox fx:id="_projectSection">
+         <children>
+            <HBox>
+               <children>
+                  <StackPane>
+                     <children>
+                        <Circle fill="WHITE" radius="32.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                           <effect>
+                              <DropShadow color="#00000033" />
+                           </effect>
+                        </Circle>
+                        <ImageView fx:id="_projectLogoImage" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="_projectLogoBackupText" styleClass="menu-project-logo-backup-text" stylesheets="@../styles/beauty.css" text="AB" />
+                     </children>
+                  </StackPane>
+                  <VBox HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="16.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label fx:id="_projectTitleText" alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" styleClass="menu-project-header-text" stylesheets="@../styles/beauty.css" text="Instagram" />
+                        <Label fx:id="_projectSubtitleText" alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" styleClass="menu-project-subheader-text" stylesheets="@../styles/beauty.css" text="\@INS">
+                           <VBox.margin>
+                              <Insets top="4.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="24.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox>
+               <children>
+                  <Label styleClass="menu-section-header" stylesheets="@../styles/beauty.css" text="PROJECT" />
+               </children>
+            </VBox>
+            <AnchorPane onMouseClicked="#onClickProductBacklog" styleClass="menu-button-back" stylesheets="@../styles/beauty.css">
+               <children>
+                  <HBox alignment="CENTER" layoutY="5.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="40.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.0">
+                     <children>
+                        <ImageView cache="true" fitHeight="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/list-on-window.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label styleClass="menu-button-text" stylesheets="@../styles/beauty.css" text="Product backlog" wrapText="true" />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="32.0" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane fx:id="_activeSprintBoardButton" onMouseClicked="#onClickActiveSprintBoard" styleClass="menu-button-back" stylesheets="@../styles/beauty.css">
+               <children>
+                  <HBox alignment="CENTER" layoutY="5.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="40.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.0">
+                     <children>
+                        <ImageView cache="true" fitHeight="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/plans.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label styleClass="menu-button-text" stylesheets="@../styles/beauty.css" text="Active sprint board" wrapText="true" />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="32.0" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane fx:id="_activeSprintBoardButton1" onMouseClicked="#onClickProjectMembers" styleClass="menu-button-back" stylesheets="@../styles/beauty.css">
+               <children>
+                  <HBox alignment="CENTER" layoutY="5.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="40.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.0">
+                     <children>
+                        <ImageView cache="true" fitHeight="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/group.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label styleClass="menu-button-text" stylesheets="@../styles/beauty.css" text="Project members" wrapText="true" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets right="32.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <HBox prefHeight="1.0" styleClass="menu-separator" stylesheets="@../styles/beauty.css">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox fx:id="_projectAdministrationSection">
+               <children>
+                  <VBox>
+                     <children>
+                        <Label styleClass="menu-section-header" stylesheets="@../styles/beauty.css" text="ADMINISTRATION" />
+                     </children>
+                  </VBox>
+                  <AnchorPane onMouseClicked="#onClickProjectSettings" styleClass="menu-button-back" stylesheets="@../styles/beauty.css">
+                     <children>
+                        <HBox alignment="CENTER" layoutY="5.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="40.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.0">
+                           <children>
+                              <ImageView cache="true" fitHeight="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/settings-work-tool.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label styleClass="menu-button-text" stylesheets="@../styles/beauty.css" text="Project settings" wrapText="true" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets right="32.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <HBox prefHeight="1.0" styleClass="menu-separator" stylesheets="@../styles/beauty.css">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets top="12.0" />
+         </VBox.margin>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <VBox>
+               <children>
+                  <Label styleClass="menu-section-header" stylesheets="@../styles/beauty.css" text="OTHER PROJECTS" />
+               </children>
+            </VBox>
+            <AnchorPane onMouseClicked="#onClickAllProjects" styleClass="menu-button-back" stylesheets="@../styles/beauty.css">
+               <children>
+                  <HBox alignment="CENTER" layoutY="5.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="40.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.0">
+                     <children>
+                        <ImageView cache="true" fitHeight="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/reply-all-button.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label styleClass="menu-button-text" stylesheets="@../styles/beauty.css" text="All projects" wrapText="true" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets right="32.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</VBox>

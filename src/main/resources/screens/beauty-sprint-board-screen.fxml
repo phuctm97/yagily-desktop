@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="_rootPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="720.0" minWidth="720.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="720.0" minWidth="1280.0">
+          <children>
+              <VBox layoutY="80.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                      <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                          <children>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="34.0" styleClass="blue-icon" stylesheets="@../styles/beauty.css">
+                                  <children>
+                                      <ImageView cache="true" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                              <Image url="@../images/star.png" />
+                                          </image>
+                                      </ImageView>
+                                  </children>
+                              </VBox>
+                              <VBox>
+                                  <children>
+                                      <Label fx:id="_titleText" styleClass="screen-title" stylesheets="@../styles/beauty.css" text="Your Projects" />
+                                      <Label fx:id="_subtitleText" styleClass="screen-subtitle" stylesheets="@../styles/beauty.css" text="\@phuctm97" />
+                                  </children>
+                                  <HBox.margin>
+                                      <Insets left="20.0" />
+                                  </HBox.margin>
+                              </VBox>
+                        <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Button fx:id="_finishSprintButton" mnemonicParsing="false" onAction="#onPressFinishSprint" styleClass="screen-header-button" stylesheets="@../styles/beauty.css" text="Finish sprint" />
+                           </children>
+                        </HBox>
+                          </children>
+                          <VBox.margin>
+                              <Insets />
+                          </VBox.margin>
+                          <padding>
+                              <Insets bottom="28.0" left="28.0" right="28.0" top="28.0" />
+                          </padding>
+                      </HBox>
+                      <ScrollPane fx:id="_scrollPane" fitToHeight="true" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@../styles/beauty.css" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+                          <VBox.margin>
+                              <Insets top="-10.0" />
+                          </VBox.margin>
+                          <content>
+                        <HBox fx:id="_scrollViewPane">
+                           <children>
+                                      <VBox fx:id="_listOnePanePane" maxWidth="-Infinity" minWidth="-Infinity" onMouseDragEntered="#onMouseDragEnteredBoardPane" onMouseDragExited="#onMouseDragExitedBoardPane" onMouseDragOver="#onMouseDragOverBoardPane" onMouseDragReleased="#onMouseDragReleasedBoardPane" prefWidth="284.0" styleClass="backlog-board" stylesheets="@../styles/beauty.css">
+                                          <children>
+                                              <AnchorPane>
+                                                  <VBox.margin>
+                                                      <Insets />
+                                                  </VBox.margin>
+                                                  <children>
+                                                      <Label fx:id="_listOneTitleText" styleClass="tit" stylesheets="@../styles/beauty.css" text="BACK LOG" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                          <padding>
+                                                              <Insets bottom="6.0" top="6.0" />
+                                                          </padding>
+                                                      </Label>
+                                                  </children>
+                                              </AnchorPane>
+                                    <ScrollPane fx:id="_scrollPaneOne" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="0.0" stylesheets="@../styles/beauty.css" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets bottom="6.0" top="6.0" />
+                                       </VBox.margin>
+                                       <content>
+                                                    <VBox fx:id="_listOnePane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+                                       </content>
+                                       <styleClass>
+                                          <String fx:value="gray-scrollbar-scroll-pane" />
+                                          <String fx:value="sprint-board-scroll-pane" />
+                                       </styleClass>
+                                    </ScrollPane>
+                                          </children>
+                                          <padding>
+                                              <Insets bottom="16.0" left="16.0" right="6.0" top="16.0" />
+                                          </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                      </VBox>
+                              <VBox fx:id="_listTwoPanePane" maxWidth="-Infinity" minWidth="-Infinity" onMouseDragEntered="#onMouseDragEnteredBoardPane" onMouseDragExited="#onMouseDragExitedBoardPane" onMouseDragOver="#onMouseDragOverBoardPane" onMouseDragReleased="#onMouseDragReleasedBoardPane" prefWidth="284.0" styleClass="backlog-board" stylesheets="@../styles/beauty.css">
+                                 <children>
+                                    <AnchorPane>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <children>
+                                          <Label fx:id="_listTwoTitleText" styleClass="tit" stylesheets="@../styles/beauty.css" text="TO DO" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <padding>
+                                                <Insets bottom="6.0" top="6.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <ScrollPane fx:id="_scrollPaneTwo" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="0.0" stylesheets="@../styles/beauty.css" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets bottom="6.0" top="6.0" />
+                                       </VBox.margin>
+                                       <content>
+                                          <VBox fx:id="_listTwoPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+                                       </content>
+                                       <styleClass>
+                                          <String fx:value="gray-scrollbar-scroll-pane" />
+                                          <String fx:value="sprint-board-scroll-pane" />
+                                       </styleClass>
+                                    </ScrollPane>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="16.0" left="16.0" right="6.0" top="16.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets left="21.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="_listThreePanePane" maxWidth="-Infinity" minWidth="-Infinity" onMouseDragEntered="#onMouseDragEnteredBoardPane" onMouseDragExited="#onMouseDragExitedBoardPane" onMouseDragOver="#onMouseDragOverBoardPane" onMouseDragReleased="#onMouseDragReleasedBoardPane" prefWidth="284.0" styleClass="backlog-board" stylesheets="@../styles/beauty.css">
+                                 <children>
+                                    <AnchorPane>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <children>
+                                          <Label fx:id="_listThreeTitleText" styleClass="tit" stylesheets="@../styles/beauty.css" text="IN PROGRESS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <padding>
+                                                <Insets bottom="6.0" top="6.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <ScrollPane fx:id="_scrollPaneThree" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="0.0" stylesheets="@../styles/beauty.css" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets bottom="6.0" top="6.0" />
+                                       </VBox.margin>
+                                       <content>
+                                          <VBox fx:id="_listThreePane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+                                       </content>
+                                       <styleClass>
+                                          <String fx:value="gray-scrollbar-scroll-pane" />
+                                          <String fx:value="sprint-board-scroll-pane" />
+                                       </styleClass>
+                                    </ScrollPane>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="16.0" left="16.0" right="6.0" top="16.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets left="21.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="_listFourPanePane" maxWidth="-Infinity" minWidth="-Infinity" onMouseDragEntered="#onMouseDragEnteredBoardPane" onMouseDragExited="#onMouseDragExitedBoardPane" onMouseDragOver="#onMouseDragOverBoardPane" onMouseDragReleased="#onMouseDragReleasedBoardPane" prefWidth="284.0" styleClass="backlog-board" stylesheets="@../styles/beauty.css">
+                                 <children>
+                                    <AnchorPane>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <children>
+                                          <Label fx:id="_listFourTitleText" styleClass="tit" stylesheets="@../styles/beauty.css" text="RESOLVED" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <padding>
+                                                <Insets bottom="6.0" top="6.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <ScrollPane fx:id="_scrollPaneFour" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="0.0" stylesheets="@../styles/beauty.css" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets bottom="6.0" top="6.0" />
+                                       </VBox.margin>
+                                       <content>
+                                          <VBox fx:id="_listFourPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+                                       </content>
+                                       <styleClass>
+                                          <String fx:value="gray-scrollbar-scroll-pane" />
+                                          <String fx:value="sprint-board-scroll-pane" />
+                                       </styleClass>
+                                    </ScrollPane>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="16.0" left="16.0" right="6.0" top="16.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets left="21.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="28.0" right="28.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                          </content>
+                     <styleClass>
+                        <String fx:value="gray-scrollbar-scroll-pane" />
+                        <String fx:value="sprint-board-list-scroll-pane" />
+                     </styleClass>
+                      </ScrollPane>
+                  </children>
+              </VBox>
+          </children>
+          <padding>
+              <Insets bottom="12.0" left="12.0" right="12.0" top="52.0" />
+          </padding>
+      </AnchorPane>
+   </children>
+</StackPane>

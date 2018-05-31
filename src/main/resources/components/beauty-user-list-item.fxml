@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<VBox fx:id="_rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#onClick" prefHeight="184.0" prefWidth="232.0" styleClass="card-item-one" stylesheets="@../styles/beauty.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <AnchorPane>
+         <children>
+              <HBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                      <StackPane>
+                          <children>
+                              <Circle fx:id="_logoCircle" fill="WHITE" radius="32.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                                  <effect>
+                                      <DropShadow blurType="GAUSSIAN" color="#00000026" spread="0.1" />
+                                  </effect>
+                              </Circle>
+                              <ImageView fx:id="_logoImage" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+                              <Label fx:id="_logoText" alignment="CENTER" styleClass="text-item-one" stylesheets="@../styles/beauty.css" text="FB" textAlignment="CENTER" />
+                          </children>
+                      </StackPane>
+                  </children>
+                  <padding>
+                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                  </padding>
+              </HBox>
+            <HBox layoutX="200.0" layoutY="16.0" onMouseClicked="#onClickClose" styleClass="transparent-button-back" stylesheets="@../styles/beauty.css" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+               <children>
+                  <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/delete-cross.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+        <Label fx:id="_titleText" alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="project-card-title" stylesheets="@../styles/beauty.css" text="Facebook" textAlignment="CENTER" />
+        <Label fx:id="_subtitleText" alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="project-card-subtitle" stylesheets="@../styles/beauty.css" text="\@FB" textAlignment="CENTER">
+            <VBox.margin>
+                <Insets top="3.0" />
+            </VBox.margin>
+        </Label>
+    </children>
+</VBox>

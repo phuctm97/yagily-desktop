@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="_rootPane" minHeight="720.0" minWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="720.0" minWidth="1280.0">
+          <children>
+              <VBox fx:id="_scrollViewPane" layoutY="80.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                      <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                          <children>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="34.0" styleClass="blue-icon" stylesheets="@../styles/beauty.css">
+                                  <children>
+                                      <ImageView cache="true" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                              <Image url="@../images/star.png" />
+                                          </image>
+                                      </ImageView>
+                                  </children>
+                              </VBox>
+                              <VBox>
+                                  <children>
+                                      <Label fx:id="_titleText" styleClass="screen-title" stylesheets="@../styles/beauty.css" text="Your Projects" />
+                                      <Label fx:id="_subtitleText" styleClass="screen-subtitle" stylesheets="@../styles/beauty.css" text="\@phuctm97" />
+                                  </children>
+                                  <HBox.margin>
+                                      <Insets left="20.0" />
+                                  </HBox.margin>
+                              </VBox>
+                          </children>
+                          <VBox.margin>
+                              <Insets />
+                          </VBox.margin>
+                          <padding>
+                              <Insets bottom="28.0" left="28.0" top="28.0" />
+                          </padding>
+                      </HBox>
+                      <ScrollPane fx:id="_scrollPane" fitToWidth="true" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseDragEntered="#onMouseDragEnteredScrollPane" onMouseDragExited="#onMouseDragExitedScrollPane" onMouseDragReleased="#onMouseDragReleasedScrollPane" stylesheets="@../styles/beauty.css" vbarPolicy="ALWAYS" VBox.vgrow="ALWAYS">
+                          <VBox.margin>
+                              <Insets />
+                          </VBox.margin>
+                     <content>
+                        <VBox maxHeight="1.7976931348623157E308">
+                           <children>
+                              <VBox fx:id="_nextSprintContainerPane" onMouseDragEntered="#onMouseDragEnteredNextSprintPane" onMouseDragExited="#onMouseDragExitedNextSprintPane" onMouseDragOver="#onMouseDragOverNextSprintPane" onMouseDragReleased="#onMouseDragReleasedNextSprintPane" styleClass="backlog-board" stylesheets="@../styles/beauty.css" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <AnchorPane>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <children>
+                                          <Label fx:id="_sprintText" styleClass="tit" stylesheets="@../styles/beauty.css" text="Next Sprint (No. 1)" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <padding>
+                                                <Insets bottom="6.0" top="6.0" />
+                                             </padding>
+                                          </Label>
+                                          <Button fx:id="_startSprintButton" layoutX="73.0" layoutY="-4.0" mnemonicParsing="false" onAction="#onPressStartSprint" styleClass="screen-header-button" stylesheets="@../styles/beauty.css" text="Start sprint" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <VBox fx:id="_nextSprintBacklogPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets bottom="6.0" top="6.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <HBox fx:id="_nextSprintDragArea" alignment="CENTER" onMouseClicked="#onClickCreateUserStory" styleClass="empty-sprint-backlog-back" stylesheets="@../styles/beauty.css">
+                                       <children>
+                                          <Label fx:id="_nextSprintDragAreaText" styleClass="empty-sprint-backlog-text" stylesheets="@../styles/beauty.css" text="This is a sprint. Plan a sprint by dragging user stories here">
+                                             <HBox.margin>
+                                                <Insets left="12.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="16.0" right="16.0" top="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="28.0" right="8.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox onMouseDragEntered="#onMouseDragEnteredProductBacklogPane" onMouseDragExited="#onMouseDragExitedProductBacklogPane" onMouseDragOver="#onMouseDragOverProductBacklogPane" onMouseDragReleased="#onMouseDragReleasedProductBacklogPane" styleClass="backlog-board" stylesheets="@../styles/beauty.css">
+                                 <children>
+                                    <Label fx:id="_productBacklogText" styleClass="tit" stylesheets="@../styles/beauty.css" text="Product backlog">
+                                       <VBox.margin>
+                                          <Insets bottom="6.0" top="6.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <VBox fx:id="_productBacklogPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets bottom="6.0" top="6.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <HBox fx:id="_addUserStoryButton" onMouseClicked="#onClickCreateUserStory" styleClass="add-user-story-back" stylesheets="@../styles/beauty.css">
+                                       <children>
+                                          <Label alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="22.0" styleClass="add-user-story-text" stylesheets="@../styles/beauty.css" text="+" />
+                                          <Label styleClass="add-user-story-text" stylesheets="@../styles/beauty.css" text=" Add new user story">
+                                             <HBox.margin>
+                                                <Insets left="12.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="16.0" right="16.0" top="10.0" />
+                                       </padding>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets left="28.0" right="8.0" top="20.0" />
+                                 </VBox.margin>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </content>
+                     <styleClass>
+                        <String fx:value="gray-scrollbar-scroll-pane" />
+                        <String fx:value="backlog-scroll-pane" />
+                     </styleClass>
+                      </ScrollPane>
+                  </children>
+              </VBox>
+          </children>
+          <padding>
+              <Insets bottom="28.0" left="12.0" top="52.0" />
+          </padding>
+      </AnchorPane>
+   </children>
+</StackPane>
